@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jinaoasher.site/"/>
-  <updated>2017-09-26T14:42:01.947Z</updated>
+  <updated>2017-09-27T16:01:22.287Z</updated>
   <id>http://jinaoasher.site/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://jinaoasher.site/%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E6%B5%8B%E8%AF%95%20&amp;&amp;%20%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%B5%8B%E8%AF%95/"/>
+    <id>http://jinaoasher.site/文章发布测试 &amp;&amp; 代码高亮测试/</id>
+    <published>2017-09-27T16:01:09.486Z</published>
+    <updated>2017-09-27T16:01:22.287Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="文章发布测试-amp-amp-代码高亮测试"><a href="#文章发布测试-amp-amp-代码高亮测试" class="headerlink" title="文章发布测试 &amp;&amp; 代码高亮测试"></a>文章发布测试 &amp;&amp; 代码高亮测试</h1><hr><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">printf(&quot;你就是个大猪头！&quot;);</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;文章发布测试-amp-amp-代码高亮测试&quot;&gt;&lt;a href=&quot;#文章发布测试-amp-amp-代码高亮测试&quot; class=&quot;headerlink&quot; title=&quot;文章发布测试 &amp;amp;&amp;amp; 代码高亮测试&quot;&gt;&lt;/a&gt;文章发布测试 &amp;amp;&amp;amp; 代码
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
