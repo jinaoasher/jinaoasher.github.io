@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jinaoasher.site/"/>
-  <updated>2017-09-28T11:00:28.684Z</updated>
+  <updated>2017-09-28T11:08:40.955Z</updated>
   <id>http://jinaoasher.site/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://jinaoasher.site/%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
     <id>http://jinaoasher.site/这是一篇测试文章/</id>
     <published>2017-09-28T10:04:39.000Z</published>
-    <updated>2017-09-28T11:00:28.684Z</updated>
+    <updated>2017-09-28T11:08:40.955Z</updated>
     
     <content type="html"><![CDATA[<p>代码高亮测试<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">printf(&quot;代码高亮测试成功了吗？&quot;);</div></pre></td></tr></table></figure></p><hr><p>七牛云图床测试<br><img src="http://owxxx8lxs.bkt.clouddn.com/favicon2.png" alt="本站缩略图标"></p><hr>]]></content>
     
@@ -35,7 +35,7 @@
     </summary>
     
     
-      <category term="“网站测试”" scheme="http://jinaoasher.site/tags/%E2%80%9C%E7%BD%91%E7%AB%99%E6%B5%8B%E8%AF%95%E2%80%9D/"/>
+      <category term="网站测试" scheme="http://jinaoasher.site/tags/%E7%BD%91%E7%AB%99%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
