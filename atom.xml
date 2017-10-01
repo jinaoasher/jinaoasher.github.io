@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jinaoasher.site/"/>
-  <updated>2017-10-01T02:45:45.747Z</updated>
+  <updated>2017-10-01T03:02:26.638Z</updated>
   <id>http://jinaoasher.site/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://jinaoasher.site/rand/"/>
     <id>http://jinaoasher.site/rand/</id>
     <published>2017-10-01T02:41:13.000Z</published>
-    <updated>2017-10-01T02:45:45.747Z</updated>
+    <updated>2017-10-01T03:02:26.638Z</updated>
     
     <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">//k=x+rand()%(y-x+1)，k即为所求范围内随机生成的数，rand()%a的结果最大为a-1</div></pre></td></tr></table></figure>]]></content>
     
@@ -37,7 +37,7 @@
       <category term="代码杂货铺" scheme="http://jinaoasher.site/categories/%E4%BB%A3%E7%A0%81%E6%9D%82%E8%B4%A7%E9%93%BA/"/>
     
     
-      <category term="代码杂货铺,C" scheme="http://jinaoasher.site/tags/%E4%BB%A3%E7%A0%81%E6%9D%82%E8%B4%A7%E9%93%BA-C/"/>
+      <category term="C" scheme="http://jinaoasher.site/tags/C/"/>
     
   </entry>
   
@@ -71,7 +71,7 @@
     <link href="http://jinaoasher.site/type/"/>
     <id>http://jinaoasher.site/type/</id>
     <published>2017-09-28T15:47:34.000Z</published>
-    <updated>2017-10-01T02:50:12.271Z</updated>
+    <updated>2017-10-01T03:02:42.351Z</updated>
     
     <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line">@warning: assignment from incompatible pointer type    （指针类型不匹配）   </div><div class="line">*/</div><div class="line"></div><div class="line">//原代码</div><div class="line">struct Node&#123;</div><div class="line">  datatype data;</div><div class="line">  struct Node *next;</div><div class="line"> struct Node *pre;</div><div class="line">&#125;;</div><div class="line">typedef struct Node nodes;</div><div class="line">typedef struct Node *list;      //与结构体中的指针类型冲突</div><div class="line"></div><div class="line"></div><div class="line">//修改后的代码</div><div class="line">typedef struct Node *list; </div><div class="line">struct Node&#123;</div><div class="line">datatype data;</div><div class="line">  list next;</div><div class="line">  list pre; </div><div class="line">&#125;;</div><div class="line">typedef struct Node nodes;</div></pre></td></tr></table></figure>]]></content>
     
@@ -87,7 +87,7 @@
       <category term="代码杂货铺" scheme="http://jinaoasher.site/categories/%E4%BB%A3%E7%A0%81%E6%9D%82%E8%B4%A7%E9%93%BA/"/>
     
     
-      <category term="代码杂货铺,C" scheme="http://jinaoasher.site/tags/%E4%BB%A3%E7%A0%81%E6%9D%82%E8%B4%A7%E9%93%BA-C/"/>
+      <category term="C" scheme="http://jinaoasher.site/tags/C/"/>
     
   </entry>
   
@@ -96,7 +96,7 @@
     <link href="http://jinaoasher.site/%E4%BB%A3%E7%A0%81%E6%9D%82%E8%B4%A7%E9%93%BA/"/>
     <id>http://jinaoasher.site/代码杂货铺/</id>
     <published>2017-09-28T15:31:28.000Z</published>
-    <updated>2017-09-28T15:41:42.576Z</updated>
+    <updated>2017-10-01T03:02:54.675Z</updated>
     
     <content type="html"><![CDATA[<h3 id="《代码杂货铺》分类简介"><a href="#《代码杂货铺》分类简介" class="headerlink" title="《代码杂货铺》分类简介"></a>《代码杂货铺》分类简介</h3><p>想法源于自己在学习过程中不会主动并系统地去整理某些知识，所以会经常出现学过后即使运用后没几天就忘掉的情况。</p><p>故决定开设这一分类来统一这一零碎的学习碎片，说不定自己哪天突然就整理了。</p>]]></content>
     
@@ -111,8 +111,6 @@
     
       <category term="代码杂货铺" scheme="http://jinaoasher.site/categories/%E4%BB%A3%E7%A0%81%E6%9D%82%E8%B4%A7%E9%93%BA/"/>
     
-    
-      <category term="代码杂货铺" scheme="http://jinaoasher.site/tags/%E4%BB%A3%E7%A0%81%E6%9D%82%E8%B4%A7%E9%93%BA/"/>
     
   </entry>
   
