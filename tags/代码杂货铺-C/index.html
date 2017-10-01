@@ -99,7 +99,7 @@
 <meta name="description" content="逃出体制，奔向生命的大和谐">
 <meta property="og:type" content="website">
 <meta property="og:title" content="金傲Asher的个人博客">
-<meta property="og:url" content="http://jinaoasher.site/tags/代码杂货铺-C/index.html">
+<meta property="og:url" content="http://jinaoasher.site/tags/代码杂货铺-c/index.html">
 <meta property="og:site_name" content="金傲Asher的个人博客">
 <meta property="og:description" content="逃出体制，奔向生命的大和谐">
 <meta property="og:locale" content="zh-Hans">
@@ -134,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://jinaoasher.site/tags/代码杂货铺-C/"/>
+  <link rel="canonical" href="http://jinaoasher.site/tags/代码杂货铺-c/"/>
 
 
 
 
 
-  <title>标签: 代码杂货铺, C | 金傲Asher的个人博客</title>
+  <title>标签: 代码杂货铺, c | 金傲Asher的个人博客</title>
   
 
 
@@ -276,7 +276,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>代码杂货铺, C<small>标签</small>
+        <h1>代码杂货铺, c<small>标签</small>
         </h1>
       </div>
 
@@ -288,9 +288,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/type/" itemprop="url">
+            <a class="post-title-link" href="/exit/" itemprop="url">
               
-                <span itemprop="name">warning assignment from incompatible pointer type</span>
+                <span itemprop="name">exit(0),exit(1)</span>
               
             </a>
         
@@ -298,9 +298,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-28T23:47:34+08:00"
-              content="2017-09-28" >
-          09-28
+              datetime="2017-10-01T10:38:46+08:00"
+              content="2017-10-01" >
+          10-01
         </time>
       </div>
 
@@ -360,7 +360,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -382,7 +382,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -680,6 +680,44 @@
               success: function(newcounter) {
                 var $element = $(document.getElementById(url));
                 $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+'.leancloud-visitors-count').text(newcounter.get('time'));
               },
               error: function(newcounter, error) {
                 console.log('Failed to create');

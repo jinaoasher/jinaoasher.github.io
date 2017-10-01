@@ -3,6 +3,47 @@
   
     
     <entry>
+      <title><![CDATA[rand()]]></title>
+      <url>/rand/</url>
+      <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">//k=x+rand()%(y-x+1)，k即为所求范围内随机生成的数，rand()%a的结果最大为a-1</div></pre></td></tr></table></figure>]]></content>
+      
+        <categories>
+            
+            <category> 代码杂货铺 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 代码杂货铺, C </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[exit(0),exit(1)]]></title>
+      <url>/exit/</url>
+      <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">exit(1);</div><div class="line">//异常退出,比如你的代码在出现不应该出现的分枝,要求终止程序的时候就用exit(1)</div><div class="line"></div><div class="line">exit(0);</div><div class="line">//是正常退出,就是你认为代码一切正常的时候的退出</div></pre></td></tr></table></figure>
+]]></content>
+      
+        <categories>
+            
+            <category> 代码杂货铺 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 代码杂货铺, c </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[warning assignment from incompatible pointer type]]></title>
       <url>/type/</url>
       <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line">	@warning: assignment from incompatible pointer type    （指针类型不匹配）   </div><div class="line">*/</div><div class="line"></div><div class="line">	//原代码</div><div class="line">	struct Node&#123;</div><div class="line">  		datatype data;</div><div class="line">  		struct Node *next;</div><div class="line"> 		struct Node *pre;</div><div class="line">	&#125;;</div><div class="line">	typedef struct Node nodes;</div><div class="line">	typedef struct Node *list;      //与结构体中的指针类型冲突</div><div class="line"></div><div class="line"></div><div class="line">	//修改后的代码</div><div class="line">	typedef struct Node *list; </div><div class="line">	struct Node&#123;</div><div class="line">		datatype data;</div><div class="line">  		list next;</div><div class="line">  		list pre; </div><div class="line">	&#125;;</div><div class="line">	typedef struct Node nodes;</div></pre></td></tr></table></figure>
