@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[Code：Bolcks主题设置[详细图解]]]></title>
-      <url>/Code%EF%BC%9ABolcks%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/</url>
+      <url>/Code%EF%BC%9ABolcksThemesInstalling/</url>
       <content type="html"><![CDATA[<p>Code：Blocks默认的主题是白色背景的，长时间打代码不利于自己的眼睛。百度了下相关的文章，发现大部分文章方法并不详尽，对像我这样的小白兼菜鸡很不友好，故自己重新整理了一下。</p>
 <hr>
 <h2 id="Step-1：主题下载"><a href="#Step-1：主题下载" class="headerlink" title="Step 1：主题下载"></a>Step 1：主题下载</h2><ol>
