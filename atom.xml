@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jinaoasher.site/"/>
-  <updated>2017-10-01T07:03:05.378Z</updated>
+  <updated>2017-10-02T13:51:51.866Z</updated>
   <id>http://jinaoasher.site/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>正确使用feof()函数</title>
+    <link href="http://jinaoasher.site/feof/"/>
+    <id>http://jinaoasher.site/feof/</id>
+    <published>2017-10-02T13:27:22.000Z</published>
+    <updated>2017-10-02T13:51:51.866Z</updated>
+    
+    <content type="html"><![CDATA[<p>在做课设作业的时候，发现用链表读取文件中的数据的时候总是会多读取一串，next加了又减，总觉得没有问题，于是翻开教科书，教科书上如是说。。</p><blockquote><p>feof()函数用来检测文件读写位置指针是否已到文件末尾。<br>…….<br>如果文件读写位置指针已到文件末尾，则函数返回非0值（逻辑真）；否则函数返回0值（逻辑假）。</p></blockquote><p>emm看完我更懵了，是这样没有错嘛，然后一百度就发现问题了。</p><p>这里我以个人的理解解读下feof()函数，如果有错误欢迎指正。</p><hr><h2 id="了解函数"><a href="#了解函数" class="headerlink" title="了解函数"></a>了解函数</h2><p>我们先来看<a href="https://baike.baidu.com/item/feof/10942186?fr=aladdin#1" target="_blank" rel="external">百度百科</a>上的说法：</p><p><img src="http://owxxx8lxs.bkt.clouddn.com/feof.png" alt="feofDescription"></p><p>和教科书上一样。</p><p>但是下面的程序例中有不同的说法（<strong>注意加粗部分文字</strong>）：</p><blockquote><p>feof(fp)有两个返回值:如果遇到文件结束，函数feof（fp）的值为非零值，否则为0。</p><p>EOF是文本文件结束的标志。在文本文件中，数据是以字符的ASCⅡ代码值的形式存放，普通字符的ASCⅡ代码的范围是32到127（十进制），EOF的16进制代码为0xFF（十进制为-1），因此可以用EOF作为文件结束标志。</p><p>当把数据以二进制形式存放到文件中时，就会有-1值的出现，因此<strong>不能采用EOF作为二进制文件的结束标志</strong>。为解决这一个问题，ASCI C提供一个feof函数，用来判断文件是否结束。<strong>feof函数既可用以判断二进制文件又可用以判断文本文件。</strong></p><p>“C”语言的“feof()”函数和数据库中“eof()”函数的运作是<strong>完全不同的</strong>。<strong>数据库中“eof()”函数读取当前指针的位置，“C”语言的“feof()”函数返回的是最后一次“读操作的内容”</strong>。多年来把“位置和内容”相混，从而造成了对这一概念的似是而非。</p><p>那么，位置和内容到底有何不同呢？举个简单的例子，比如有人说“你走到火车的最后一节车箱”这就是位置。而如果说“请你一直向后走，摸到铁轨结束”这就是内容。也就是说用内容来判断会“多走一节”。这就是完全依赖于“while(!feof(FP)){…}”进行文件复制时，目标文档总会比源文档“多出一些”的原因。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在做课设作业的时候，发现用链表读取文件中的数据的时候总是会多读取一串，next加了又减，总觉得没有问题，于是翻开教科书，教科书上如是说。。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;feof()函数用来检测文件读写位置指针是否已到文件末尾。&lt;br&gt;…….&lt;br&gt;如果文件读写位
+      
+    
+    </summary>
+    
+      <category term="C" scheme="http://jinaoasher.site/categories/C/"/>
+    
+    
+      <category term="C" scheme="http://jinaoasher.site/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>Code：Bolcks主题设置[详细图解]</title>

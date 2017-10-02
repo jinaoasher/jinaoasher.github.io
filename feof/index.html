@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="C," />
 
 
 
@@ -96,16 +96,20 @@
 
 
 
-<meta name="description" content="逃出体制，奔向生命的大和谐">
-<meta property="og:type" content="website">
-<meta property="og:title" content="金傲Asher的个人博客">
-<meta property="og:url" content="http://jinaoasher.site/categories/代码杂货铺/index.html">
+<meta name="description" content="在做课设作业的时候，发现用链表读取文件中的数据的时候总是会多读取一串，next加了又减，总觉得没有问题，于是翻开教科书，教科书上如是说。。  feof()函数用来检测文件读写位置指针是否已到文件末尾。…….如果文件读写位置指针已到文件末尾，则函数返回非0值（逻辑真）；否则函数返回0值（逻辑假）。  emm看完我更懵了，是这样没有错嘛，然后一百度就发现问题了。 这里我以个人的理解解读下feof()函">
+<meta name="keywords" content="C">
+<meta property="og:type" content="article">
+<meta property="og:title" content="正确使用feof()函数">
+<meta property="og:url" content="http://jinaoasher.site/feof/index.html">
 <meta property="og:site_name" content="金傲Asher的个人博客">
-<meta property="og:description" content="逃出体制，奔向生命的大和谐">
+<meta property="og:description" content="在做课设作业的时候，发现用链表读取文件中的数据的时候总是会多读取一串，next加了又减，总觉得没有问题，于是翻开教科书，教科书上如是说。。  feof()函数用来检测文件读写位置指针是否已到文件末尾。…….如果文件读写位置指针已到文件末尾，则函数返回非0值（逻辑真）；否则函数返回0值（逻辑假）。  emm看完我更懵了，是这样没有错嘛，然后一百度就发现问题了。 这里我以个人的理解解读下feof()函">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://owxxx8lxs.bkt.clouddn.com/feof.png">
+<meta property="og:updated_time" content="2017-10-02T13:51:51.866Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="金傲Asher的个人博客">
-<meta name="twitter:description" content="逃出体制，奔向生命的大和谐">
+<meta name="twitter:title" content="正确使用feof()函数">
+<meta name="twitter:description" content="在做课设作业的时候，发现用链表读取文件中的数据的时候总是会多读取一串，next加了又减，总觉得没有问题，于是翻开教科书，教科书上如是说。。  feof()函数用来检测文件读写位置指针是否已到文件末尾。…….如果文件读写位置指针已到文件末尾，则函数返回非0值（逻辑真）；否则函数返回0值（逻辑假）。  emm看完我更懵了，是这样没有错嘛，然后一百度就发现问题了。 这里我以个人的理解解读下feof()函">
+<meta name="twitter:image" content="http://owxxx8lxs.bkt.clouddn.com/feof.png">
 
 
 
@@ -134,13 +138,13 @@
 
 
 
-  <link rel="canonical" href="http://jinaoasher.site/categories/代码杂货铺/"/>
+  <link rel="canonical" href="http://jinaoasher.site/feof/"/>
 
 
 
 
 
-  <title>分类: 代码杂货铺 | 金傲Asher的个人博客</title>
+  <title>正确使用feof()函数 | 金傲Asher的个人博客</title>
   
 
 
@@ -165,7 +169,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -269,139 +273,215 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block category">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>代码杂货铺<small>分类</small>
-        </h1>
-      </div>
-
-      
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://jinaoasher.site/feof/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="金傲Asher">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="金傲Asher的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/rand/" itemprop="url">
-              
-                <span itemprop="name">rand()</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">正确使用feof()函数</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-01T10:41:13+08:00"
-              content="2017-10-01" >
-          10-01
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-02T21:27:22+08:00">
+                2017-10-02
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C/" itemprop="url" rel="index">
+                    <span itemprop="name">C</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/feof/" class="leancloud_visitors" data-flag-title="正确使用feof()函数">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/exit/" itemprop="url">
-              
-                <span itemprop="name">exit(0),exit(1)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-01T10:38:46+08:00"
-              content="2017-10-01" >
-          10-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/type/" itemprop="url">
-              
-                <span itemprop="name">warning assignment from incompatible pointer type</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-28T23:47:34+08:00"
-              content="2017-09-28" >
-          09-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/代码杂货铺/" itemprop="url">
-              
-                <span itemprop="name">代码杂货铺</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-28T23:31:28+08:00"
-              content="2017-09-28" >
-          09-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <p>在做课设作业的时候，发现用链表读取文件中的数据的时候总是会多读取一串，next加了又减，总觉得没有问题，于是翻开教科书，教科书上如是说。。</p>
+<blockquote>
+<p>feof()函数用来检测文件读写位置指针是否已到文件末尾。<br>…….<br>如果文件读写位置指针已到文件末尾，则函数返回非0值（逻辑真）；否则函数返回0值（逻辑假）。</p>
+</blockquote>
+<p>emm看完我更懵了，是这样没有错嘛，然后一百度就发现问题了。</p>
+<p>这里我以个人的理解解读下feof()函数，如果有错误欢迎指正。</p>
+<hr>
+<h2 id="了解函数"><a href="#了解函数" class="headerlink" title="了解函数"></a>了解函数</h2><p>我们先来看<a href="https://baike.baidu.com/item/feof/10942186?fr=aladdin#1" target="_blank" rel="external">百度百科</a>上的说法：</p>
+<p><img src="http://owxxx8lxs.bkt.clouddn.com/feof.png" alt="feofDescription"></p>
+<p>和教科书上一样。</p>
+<p>但是下面的程序例中有不同的说法（<strong>注意加粗部分文字</strong>）：</p>
+<blockquote>
+<p>feof(fp)有两个返回值:如果遇到文件结束，函数feof（fp）的值为非零值，否则为0。</p>
+<p>EOF是文本文件结束的标志。在文本文件中，数据是以字符的ASCⅡ代码值的形式存放，普通字符的ASCⅡ代码的范围是32到127（十进制），EOF的16进制代码为0xFF（十进制为-1），因此可以用EOF作为文件结束标志。</p>
+<p>当把数据以二进制形式存放到文件中时，就会有-1值的出现，因此<strong>不能采用EOF作为二进制文件的结束标志</strong>。为解决这一个问题，ASCI C提供一个feof函数，用来判断文件是否结束。<strong>feof函数既可用以判断二进制文件又可用以判断文本文件。</strong></p>
+<p>“C”语言的“feof()”函数和数据库中“eof()”函数的运作是<strong>完全不同的</strong>。<strong>数据库中“eof()”函数读取当前指针的位置，“C”语言的“feof()”函数返回的是最后一次“读操作的内容”</strong>。多年来把“位置和内容”相混，从而造成了对这一概念的似是而非。</p>
+<p>那么，位置和内容到底有何不同呢？举个简单的例子，比如有人说“你走到火车的最后一节车箱”这就是位置。而如果说“请你一直向后走，摸到铁轨结束”这就是内容。也就是说用内容来判断会“多走一节”。这就是完全依赖于“while(!feof(FP)){…}”进行文件复制时，目标文档总会比源文档“多出一些”的原因。</p>
+</blockquote>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    金傲Asher
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://jinaoasher.site/feof/" title="正确使用feof()函数">http://jinaoasher.site/feof/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/C/" rel="tag"># C</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Code：BolcksThemesInstalling/" rel="next" title="Code：Bolcks主题设置[详细图解]">
+                <i class="fa fa-chevron-left"></i> Code：Bolcks主题设置[详细图解]
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -409,6 +489,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
 
         </div>
@@ -430,8 +514,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -524,6 +617,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#了解函数"><span class="nav-number">1.</span> <span class="nav-text">了解函数</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -637,10 +746,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
