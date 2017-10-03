@@ -105,8 +105,8 @@
 <meta property="og:description" content="在做课设作业的时候，发现用链表读取文件中的数据的时候总是会多读取一串，next加了又减，总觉得没有问题，于是翻开教科书，教科书上如是说。。  feof()函数用来检测文件读写位置指针是否已到文件末尾。…….如果文件读写位置指针已到文件末尾，则函数返回非0值（逻辑真）；否则函数返回0值（逻辑假）。  emm看完我更懵了，是这样没有错嘛，然后一百度就发现问题了。 这里我以个人的理解解读下feof()函">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://owxxx8lxs.bkt.clouddn.com/feof.png">
-<meta property="og:image" content="http://owxxx8lxs.bkt.clouddn.com/feof2.png">
-<meta property="og:updated_time" content="2017-10-03T04:53:40.160Z">
+<meta property="og:image" content="http://owxxx8lxs.bkt.clouddn.com/feof3.png">
+<meta property="og:updated_time" content="2017-10-03T05:00:08.027Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="feof()函数的正确理解">
 <meta name="twitter:description" content="在做课设作业的时候，发现用链表读取文件中的数据的时候总是会多读取一串，next加了又减，总觉得没有问题，于是翻开教科书，教科书上如是说。。  feof()函数用来检测文件读写位置指针是否已到文件末尾。…….如果文件读写位置指针已到文件末尾，则函数返回非0值（逻辑真）；否则函数返回0值（逻辑假）。  emm看完我更懵了，是这样没有错嘛，然后一百度就发现问题了。 这里我以个人的理解解读下feof()函">
@@ -407,7 +407,7 @@
 <p>那么，位置和内容到底有何不同呢？举个简单的例子，比如有人说“你走到火车的最后一节车箱”这就是位置。而如果说“请你一直向后走，摸到铁轨结束”这就是内容。也就是说用内容来判断会“多走一节”。这就是完全依赖于“while(!feof(FP)){…}”进行文件复制时，目标文档总会比源文档“多出一些”的原因。</p>
 </blockquote>
 <p>这段话关键要读懂“<em>数据库中“eof()”函数读取当前指针的位置，“C”语言的“feof()”函数返回的是最后一次“读操作的内容”</em>”这句话的意思。结合上述的“火车”，个人理解为：<strong>当feof()读到最后一串数据的时候，指向文件读写位置指针指在文件末尾，但是此时feof()并没有将fp-&gt;flag置为非0值（逻辑真），所以函数返回值为0值（逻辑假），所以函数还要继续读取，指针不得不继续往下移动，函数就这样多读了一些不相关数据。</strong></p>
-<p><img src="http://owxxx8lxs.bkt.clouddn.com/feof2.png" alt="feof()"></p>
+<p><img src="http://owxxx8lxs.bkt.clouddn.com/feof3.png" alt="enter description here"></p>
 <p>因此也可以理解为：当读取最后一串数据的时候，文件读写位置指针就已经指向文档结尾了，但是<strong>feof()必须要当读写位置超过读写范围时才会返回真值</strong>。</p>
 <hr>
 <p>以上为个人理解，如果有理解错误的地方欢迎指正。</p>
