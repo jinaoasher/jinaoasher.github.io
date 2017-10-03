@@ -3,7 +3,7 @@
   
     
     <entry>
-      <title><![CDATA[正确使用feof()函数]]></title>
+      <title><![CDATA[feof()函数的正确理解]]></title>
       <url>/feof/</url>
       <content type="html"><![CDATA[<p>在做课设作业的时候，发现用链表读取文件中的数据的时候总是会多读取一串，next加了又减，总觉得没有问题，于是翻开教科书，教科书上如是说。。</p>
 <blockquote>
