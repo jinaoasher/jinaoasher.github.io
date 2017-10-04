@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jinaoasher.site/"/>
-  <updated>2017-10-03T05:00:08.027Z</updated>
+  <updated>2017-10-04T15:51:11.971Z</updated>
   <id>http://jinaoasher.site/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>中秋快乐</title>
+    <link href="http://jinaoasher.site/HappyMidAutumn/"/>
+    <id>http://jinaoasher.site/HappyMidAutumn/</id>
+    <published>2017-10-04T15:43:50.000Z</published>
+    <updated>2017-10-04T15:51:11.971Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天是2017年10月4日中秋，祝大家中秋快乐！</p><p>本来想在寝室玩一天的，后来还是去平台了。</p><p>摸了一下午的鱼，在某平台自学Java发现那个平台限制还是太多，逛了圈知乎后决定换视频学习的方法了。</p><p>然后找了半天终于找到了马士兵老师的视频。天啊老师的声音简直让人怀孕！真的强推，光声音我就喜欢到不行了。</p><p>既然兴趣有一点了，大概方向也有了那就开始安心学吧。</p><p>最近摸鱼有点频繁，状态也不对。</p><p>学校作业也没补完，明天补作业，补完再安心学。</p><p>就这样了。</p><p>晚安。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;今天是2017年10月4日中秋，祝大家中秋快乐！&lt;/p&gt;
+&lt;p&gt;本来想在寝室玩一天的，后来还是去平台了。&lt;/p&gt;
+&lt;p&gt;摸了一下午的鱼，在某平台自学Java发现那个平台限制还是太多，逛了圈知乎后决定换视频学习的方法了。&lt;/p&gt;
+&lt;p&gt;然后找了半天终于找到了马士兵老师的视频。
+      
+    
+    </summary>
+    
+      <category term="日常" scheme="http://jinaoasher.site/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>feof()函数的正确理解</title>
