@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[中秋快乐]]></title>
       <url>/HappyMidAutumn/</url>
-      <content type="html"><![CDATA[<p>今天是2017年10月4日中秋，祝大家中秋快乐！</p>
+      <content type="html"><![CDATA[<p>今天是2017年10月4日中秋，祝大家中秋快乐！<br><a id="more"></a></p>
 <p>本来想在寝室玩一天的，后来还是去平台了。</p>
 <p>摸了一下午的鱼，在某平台自学Java发现那个平台限制还是太多，逛了圈知乎后决定换视频学习的方法了。</p>
 <p>然后找了半天终于找到了马士兵老师的视频。天啊老师的声音简直让人怀孕！真的强推，光声音我就喜欢到不行了。</p>
@@ -28,7 +28,7 @@
     <entry>
       <title><![CDATA[feof()函数的正确理解]]></title>
       <url>/feof/</url>
-      <content type="html"><![CDATA[<p>在做课设作业的时候，发现用链表读取文件中的数据的时候总是会多读取一串，next加了又减，总觉得没有问题，于是翻开教科书，教科书上如是说。。</p>
+      <content type="html"><![CDATA[<p>在做课设作业的时候，发现用链表读取文件中的数据的时候总是会多读取一串，next加了又减，总觉得没有问题，于是翻开教科书，教科书上如是说。。。<a id="more"></a></p>
 <blockquote>
 <p>feof()函数用来检测文件读写位置指针是否已到文件末尾。<br>…….<br>如果文件读写位置指针已到文件末尾，则函数返回非0值（逻辑真）；否则函数返回0值（逻辑假）。</p>
 </blockquote>
@@ -72,7 +72,7 @@
     <entry>
       <title><![CDATA[Code：Bolcks主题设置[详细图解]]]></title>
       <url>/Code%EF%BC%9ABolcksThemesInstalling/</url>
-      <content type="html"><![CDATA[<p>Code：Blocks默认的主题是白色背景的，长时间打代码不利于自己的眼睛。百度了下相关的文章，发现大部分文章方法并不详尽，对像我这样的小白兼菜鸡很不友好，故自己重新整理了一下。</p>
+      <content type="html"><![CDATA[<p>Code：Blocks默认的主题是白色背景的，长时间打代码不利于自己的眼睛。百度了下相关的文章，发现大部分文章方法并不详尽，对像我这样的小白兼菜鸡很不友好，故自己重新整理了一下。<br><a id="more"></a></p>
 <hr>
 <h2 id="Step-1：主题下载"><a href="#Step-1：主题下载" class="headerlink" title="Step 1：主题下载"></a>Step 1：主题下载</h2><ol>
 <li><p>官方Wiki提供了15种代码高亮的主题，<a href="http://wiki.codeblocks.org/index.php?title=Syntax_highlighting_custom_colour_themes" target="_blank" rel="external">点击此链接进入官网页面下载</a><br>进入网站后，你会发现满屏幕的英文同时并没有相关的下载链接</p>
@@ -131,7 +131,8 @@
     <entry>
       <title><![CDATA[rand()]]></title>
       <url>/rand/</url>
-      <content type="html"><![CDATA[<figure class="highlight 1c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//k=x+rand()%(y-x+1)，k即为所求范围内随机生成的数，rand()%a的结果最大为a-1</span></div></pre></td></tr></table></figure>]]></content>
+      <content type="html"><![CDATA[<a id="more"></a>
+<figure class="highlight 1c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//k=x+rand()%(y-x+1)，k即为所求范围内随机生成的数，rand()%a的结果最大为a-1</span></div></pre></td></tr></table></figure>]]></content>
       
         <categories>
             
@@ -151,7 +152,8 @@
     <entry>
       <title><![CDATA[exit(0),exit(1)]]></title>
       <url>/exit/</url>
-      <content type="html"><![CDATA[<figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">exit</span>(<span class="number">1</span>);</div><div class="line"><span class="regexp">//</span>异常退出,比如你的代码在出现不应该出现的分枝,要求终止程序的时候就用<span class="keyword">exit</span>(<span class="number">1</span>)</div><div class="line"></div><div class="line"><span class="keyword">exit</span>(<span class="number">0</span>);</div><div class="line"><span class="regexp">//</span>是正常退出,就是你认为代码一切正常的时候的退出</div></pre></td></tr></table></figure>
+      <content type="html"><![CDATA[<a id="more"></a>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">exit</span>(<span class="number">1</span>);</div><div class="line"><span class="regexp">//</span>异常退出,比如你的代码在出现不应该出现的分枝,要求终止程序的时候就用<span class="keyword">exit</span>(<span class="number">1</span>)</div><div class="line"></div><div class="line"><span class="keyword">exit</span>(<span class="number">0</span>);</div><div class="line"><span class="regexp">//</span>是正常退出,就是你认为代码一切正常的时候的退出</div></pre></td></tr></table></figure>
 ]]></content>
       
         <categories>
@@ -172,7 +174,8 @@
     <entry>
       <title><![CDATA[warning assignment from incompatible pointer type]]></title>
       <url>/type/</url>
-      <content type="html"><![CDATA[<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line">	@warning: assignment from incompatible pointer <span class="keyword">type</span>    （指针类型不匹配）   </div><div class="line">*/</div><div class="line"></div><div class="line">	//原代码</div><div class="line">	struct <span class="keyword">Node</span><span class="title">&#123;</span></div><div class="line"><span class="title">  		datatype</span> data;</div><div class="line">  		struct <span class="keyword">Node</span> <span class="title">*next</span>;</div><div class="line"> 		struct <span class="keyword">Node</span> <span class="title">*pre</span>;</div><div class="line">	&#125;;</div><div class="line">	typedef struct <span class="keyword">Node</span> <span class="title">nodes</span>;</div><div class="line">	typedef struct <span class="keyword">Node</span> <span class="title">*list</span>;      //与结构体中的指针类型冲突</div><div class="line"></div><div class="line"></div><div class="line">	//修改后的代码</div><div class="line">	typedef struct <span class="keyword">Node</span> <span class="title">*list</span>; </div><div class="line">	struct <span class="keyword">Node</span><span class="title">&#123;</span></div><div class="line"><span class="title">		datatype</span> data;</div><div class="line">  		list next;</div><div class="line">  		list pre; </div><div class="line">	&#125;;</div><div class="line">	typedef struct <span class="keyword">Node</span> <span class="title">nodes</span>;</div></pre></td></tr></table></figure>
+      <content type="html"><![CDATA[<a id="more"></a>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line">	@warning: assignment from incompatible pointer <span class="keyword">type</span>    （指针类型不匹配）   </div><div class="line">*/</div><div class="line"></div><div class="line">	//原代码</div><div class="line">	struct <span class="keyword">Node</span><span class="title">&#123;</span></div><div class="line"><span class="title">  		datatype</span> data;</div><div class="line">  		struct <span class="keyword">Node</span> <span class="title">*next</span>;</div><div class="line"> 		struct <span class="keyword">Node</span> <span class="title">*pre</span>;</div><div class="line">	&#125;;</div><div class="line">	typedef struct <span class="keyword">Node</span> <span class="title">nodes</span>;</div><div class="line">	typedef struct <span class="keyword">Node</span> <span class="title">*list</span>;      //与结构体中的指针类型冲突</div><div class="line"></div><div class="line"></div><div class="line">	//修改后的代码</div><div class="line">	typedef struct <span class="keyword">Node</span> <span class="title">*list</span>; </div><div class="line">	struct <span class="keyword">Node</span><span class="title">&#123;</span></div><div class="line"><span class="title">		datatype</span> data;</div><div class="line">  		list next;</div><div class="line">  		list pre; </div><div class="line">	&#125;;</div><div class="line">	typedef struct <span class="keyword">Node</span> <span class="title">nodes</span>;</div></pre></td></tr></table></figure>
 ]]></content>
       
         <categories>
@@ -193,7 +196,7 @@
     <entry>
       <title><![CDATA[代码杂货铺]]></title>
       <url>/%E4%BB%A3%E7%A0%81%E6%9D%82%E8%B4%A7%E9%93%BA/</url>
-      <content type="html"><![CDATA[<h3 id="《代码杂货铺》分类简介"><a href="#《代码杂货铺》分类简介" class="headerlink" title="《代码杂货铺》分类简介"></a>《代码杂货铺》分类简介</h3><p>想法源于自己在学习过程中不会主动并系统地去整理某些知识，所以会经常出现学过后即使运用后没几天就忘掉的情况。</p>
+      <content type="html"><![CDATA[<h3 id="《代码杂货铺》分类简介"><a href="#《代码杂货铺》分类简介" class="headerlink" title="《代码杂货铺》分类简介"></a>《代码杂货铺》分类简介</h3><p>想法源于自己在学习过程中不会主动并系统地去整理某些知识，所以会经常出现学过后即使运用后没几天就忘掉的情况。<br><a id="more"></a></p>
 <p>故决定开设这一分类来统一这一零碎的学习碎片，说不定自己哪天突然就整理了。</p>
 ]]></content>
       
@@ -209,7 +212,8 @@
     <entry>
       <title><![CDATA[这是一篇测试文章]]></title>
       <url>/%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
-      <content type="html"><![CDATA[<p>代码高亮测试<br><figure class="highlight abnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">printf(<span class="string">"代码高亮测试成功了吗？"</span>)<span class="comment">;</span></div></pre></td></tr></table></figure></p>
+      <content type="html"><![CDATA[<p>如题嘻嘻<br><a id="more"></a></p>
+<p>代码高亮测试<br><figure class="highlight abnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">printf(<span class="string">"代码高亮测试成功了吗？"</span>)<span class="comment">;</span></div></pre></td></tr></table></figure></p>
 <hr>
 <p>七牛云图床测试<br><img src="http://owxxx8lxs.bkt.clouddn.com/huaji.jpeg" alt="图片测试"></p>
 <hr>
