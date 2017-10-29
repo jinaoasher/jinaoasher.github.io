@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+    
+    
+    
+  <url>
+    <loc>http://jinaoasher.site/%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2017-10-29T06:24:12.973Z</lastmod>
+    <data>
+        <display>
+        <title>这是一篇测试文章</title>
+        <pubTime>2017-09-28T10:04:39.000Z</pubTime>
+        
+        <tag>网站测试</tag>
+         
+         
+           
+             
+              <breadCrumb title="网站测试" url="http://jinaoasher.site/categories/%E7%BD%91%E7%AB%99%E6%B5%8B%E8%AF%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jinaoasher.site/Code%EF%BC%9ABolcksThemesInstalling/</loc>
+    <lastmod>2017-10-29T06:09:59.491Z</lastmod>
+    <data>
+        <display>
+        <title>Code：Bolcks主题设置[详细图解]</title>
+        <pubTime>2017-10-01T05:30:37.000Z</pubTime>
+        
+        <tag>Code：Blocks主题安装</tag>
+         
+         
+           
+             
+              <breadCrumb title="Code：Bolocks" url="http://jinaoasher.site/categories/Code%EF%BC%9ABolocks/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jinaoasher.site/exit/</loc>
+    <lastmod>2017-10-29T06:09:35.941Z</lastmod>
+    <data>
+        <display>
+        <title>exit(0),exit(1)</title>
+        <pubTime>2017-10-01T02:38:46.000Z</pubTime>
+        
+        <tag>C</tag>
+         
+         
+           
+             
+              <breadCrumb title="代码杂货铺" url="http://jinaoasher.site/categories/%E4%BB%A3%E7%A0%81%E6%9D%82%E8%B4%A7%E9%93%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jinaoasher.site/feof/</loc>
+    <lastmod>2017-10-29T06:09:10.042Z</lastmod>
+    <data>
+        <display>
+        <title>feof()函数的正确理解</title>
+        <pubTime>2017-10-02T13:27:22.000Z</pubTime>
+        
+        <tag>C</tag>
+         
+         
+           
+             
+              <breadCrumb title="C" url="http://jinaoasher.site/categories/C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jinaoasher.site/HappyMidAutumn/</loc>
+    <lastmod>2017-10-29T06:08:41.601Z</lastmod>
+    <data>
+        <display>
+        <title>中秋快乐</title>
+        <pubTime>2017-10-04T15:43:50.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="日常" url="http://jinaoasher.site/categories/%E6%97%A5%E5%B8%B8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jinaoasher.site/rand/</loc>
+    <lastmod>2017-10-29T06:08:24.870Z</lastmod>
+    <data>
+        <display>
+        <title>rand()</title>
+        <pubTime>2017-10-01T02:41:13.000Z</pubTime>
+        
+        <tag>C</tag>
+         
+         
+           
+             
+              <breadCrumb title="代码杂货铺" url="http://jinaoasher.site/categories/%E4%BB%A3%E7%A0%81%E6%9D%82%E8%B4%A7%E9%93%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jinaoasher.site/type/</loc>
+    <lastmod>2017-10-29T06:08:14.134Z</lastmod>
+    <data>
+        <display>
+        <title>warning assignment from incompatible pointer type</title>
+        <pubTime>2017-09-28T15:47:34.000Z</pubTime>
+        
+        <tag>C</tag>
+         
+         
+           
+             
+              <breadCrumb title="代码杂货铺" url="http://jinaoasher.site/categories/%E4%BB%A3%E7%A0%81%E6%9D%82%E8%B4%A7%E9%93%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jinaoasher.site/%E4%BB%A3%E7%A0%81%E6%9D%82%E8%B4%A7%E9%93%BA/</loc>
+    <lastmod>2017-10-29T06:08:02.063Z</lastmod>
+    <data>
+        <display>
+        <title>代码杂货铺</title>
+        <pubTime>2017-09-28T15:31:28.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="代码杂货铺" url="http://jinaoasher.site/categories/%E4%BB%A3%E7%A0%81%E6%9D%82%E8%B4%A7%E9%93%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+</urlset>
