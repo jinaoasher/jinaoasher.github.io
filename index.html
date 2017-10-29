@@ -37,36 +37,11 @@
 
 
 
+
   
   
   <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
 
 
 
@@ -75,7 +50,22 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -85,11 +75,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="金傲Asher的个人博客" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
 
 
 
@@ -113,13 +98,14 @@
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
-    motion: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Penulis'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -149,12 +135,6 @@
 
 
 
-
-
-
-
-
-
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -165,8 +145,7 @@
   
 
   <div class="container sidebar-position-left 
-   page-home 
- ">
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -207,27 +186,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Beranda
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            Kategori
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            Tentang
+            Home
           </a>
         </li>
       
@@ -237,17 +196,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Arsip
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
+            Archives
           </a>
         </li>
       
@@ -313,7 +262,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Diposting di</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-04T23:43:50+08:00">
                 2017-10-04
@@ -334,7 +283,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Di</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -354,17 +303,6 @@
           
 
           
-          
-             <span id="/HappyMidAutumn/" class="leancloud_visitors" data-flag-title="中秋快乐">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Pengunjung </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
           
 
           
@@ -388,19 +326,17 @@
       
         
           
-          今天是2017年10月4日中秋，祝大家中秋快乐！
-本来想在寝室玩一天的，后来还是去平台了。
-摸了一下午的鱼，在某平台自学Java发现那个平台限制还是太多，逛了圈知乎后决定换视频学习的方法了。
-然后找了半天终于找到了马士兵老师的视频。天啊老师的声音简直让人怀孕！真的强推，光声音我就喜欢到不行了。
-既然
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/HappyMidAutumn/#more" rel="contents">
-              Baca lebih &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <p>今天是2017年10月4日中秋，祝大家中秋快乐！</p>
+<p>本来想在寝室玩一天的，后来还是去平台了。</p>
+<p>摸了一下午的鱼，在某平台自学Java发现那个平台限制还是太多，逛了圈知乎后决定换视频学习的方法了。</p>
+<p>然后找了半天终于找到了马士兵老师的视频。天啊老师的声音简直让人怀孕！真的强推，光声音我就喜欢到不行了。</p>
+<p>既然兴趣有一点了，大概方向也有了那就开始安心学吧。</p>
+<p>最近摸鱼有点频繁，状态也不对。</p>
+<p>学校作业也没补完，明天补作业，补完再安心学。</p>
+<p>就这样了。</p>
+<p>晚安。</p>
+
+          
         
       
     </div>
@@ -476,7 +412,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Diposting di</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-02T21:27:22+08:00">
                 2017-10-02
@@ -497,7 +433,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Di</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -517,17 +453,6 @@
           
 
           
-          
-             <span id="/feof/" class="leancloud_visitors" data-flag-title="feof()函数的正确理解">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Pengunjung </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
           
 
           
@@ -551,19 +476,32 @@
       
         
           
-          在做课设作业的时候，发现用链表读取文件中的数据的时候总是会多读取一串，next加了又减，总觉得没有问题，于是翻开教科书，教科书上如是说。。
+            <p>在做课设作业的时候，发现用链表读取文件中的数据的时候总是会多读取一串，next加了又减，总觉得没有问题，于是翻开教科书，教科书上如是说。。</p>
+<blockquote>
+<p>feof()函数用来检测文件读写位置指针是否已到文件末尾。<br>…….<br>如果文件读写位置指针已到文件末尾，则函数返回非0值（逻辑真）；否则函数返回0值（逻辑假）。</p>
+</blockquote>
+<p>emm看完我更懵了，是这样没有错嘛，然后一百度就发现问题了。</p>
+<p>这里我以个人的理解解读下feof()函数，如果有错误欢迎指正。</p>
+<hr>
+<h2 id="了解函数"><a href="#了解函数" class="headerlink" title="了解函数"></a>了解函数</h2><p>我们先来看<a href="https://baike.baidu.com/item/feof/10942186?fr=aladdin#1" target="_blank" rel="external">百度百科</a>上的说法：</p>
+<p><img src="http://owxxx8lxs.bkt.clouddn.com/feof.png" alt="feofDescription"></p>
+<p>和教科书上一样。</p>
+<p>但是下面的程序例中有不同的说法（<strong>注意加粗部分文字</strong>）：</p>
+<blockquote>
+<p>feof(fp)有两个返回值:如果遇到文件结束，函数feof（fp）的值为非零值，否则为0。</p>
+<p>EOF是文本文件结束的标志。在文本文件中，数据是以字符的ASCⅡ代码值的形式存放，普通字符的ASCⅡ代码的范围是32到127（十进制），EOF的16进制代码为0xFF（十进制为-1），因此可以用EOF作为文件结束标志。</p>
+<p>当把数据以二进制形式存放到文件中时，就会有-1值的出现，因此<strong>不能采用EOF作为二进制文件的结束标志</strong>。为解决这一个问题，ASCI C提供一个feof函数，用来判断文件是否结束。<strong>feof函数既可用以判断二进制文件又可用以判断文本文件。</strong></p>
+<p>“C”语言的“feof()”函数和数据库中“eof()”函数的运作是<strong>完全不同的</strong>。<strong>数据库中“eof()”函数读取当前指针的位置，“C”语言的“feof()”函数返回的是最后一次“读操作的内容”</strong>。多年来把“位置和内容”相混，从而造成了对这一概念的似是而非。</p>
+<p>那么，位置和内容到底有何不同呢？举个简单的例子，比如有人说“你走到火车的最后一节车箱”这就是位置。而如果说“请你一直向后走，摸到铁轨结束”这就是内容。也就是说用内容来判断会“多走一节”。这就是完全依赖于“while(!feof(FP)){…}”进行文件复制时，目标文档总会比源文档“多出一些”的原因。</p>
+</blockquote>
+<p>这段话关键要读懂“<em>数据库中“eof()”函数读取当前指针的位置，“C”语言的“feof()”函数返回的是最后一次“读操作的内容”</em>”这句话的意思。结合上述的“火车”，个人理解为：<strong>当feof()读到最后一串数据的时候，指向文件读写位置指针指在文件末尾，但是此时feof()并没有将fp-&gt;flag置为非0值（逻辑真），所以函数返回值为0值（逻辑假），所以函数还要继续读取，指针不得不继续往下移动，函数就这样多读了一些不相关数据。</strong></p>
+<p><img src="http://owxxx8lxs.bkt.clouddn.com/feof3.png" alt="enter description here"></p>
+<p>因此也可以理解为：当读取最后一串数据的时候，文件读写位置指针就已经指向文档结尾了，但是<strong>feof()必须要当读写位置超过读写范围时才会返回真值</strong>。</p>
+<hr>
+<p>以上为个人理解，如果有理解错误的地方欢迎指正。</p>
+<p>由于目前无需登录的评论插件要么倒了要么被墙了，所以目前博客暂时不支持留言评论，有任何意见或者问题都可以加我QQ告知，记得备注是博客这来的；或者也可以E-mail我。联系方式详见博客关于页。</p>
 
-feof()函数用来检测文件读写位置指针是否已到文件末尾。…….如果文件读写位置指针已到文件末尾，则函数返回非0值（逻辑真）；否则函数返回0值（逻辑假）。
-
-
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/feof/#more" rel="contents">
-              Baca lebih &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
         
       
     </div>
@@ -639,7 +577,7 @@ feof()函数用来检测文件读写位置指针是否已到文件末尾。…�
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Diposting di</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-01T13:30:37+08:00">
                 2017-10-01
@@ -660,7 +598,7 @@ feof()函数用来检测文件读写位置指针是否已到文件末尾。…�
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Di</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -680,17 +618,6 @@ feof()函数用来检测文件读写位置指针是否已到文件末尾。…�
           
 
           
-          
-             <span id="/Code：BolcksThemesInstalling/" class="leancloud_visitors" data-flag-title="Code：Bolcks主题设置[详细图解]">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Pengunjung </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
           
 
           
@@ -714,18 +641,47 @@ feof()函数用来检测文件读写位置指针是否已到文件末尾。…�
       
         
           
-          Code：Blocks默认的主题是白色背景的，长时间打代码不利于自己的眼睛。百度了下相关的文章，发现大部分文章方法并不详尽，对像我这样的小白兼菜鸡很不友好，故自己重新整理了一下。
+            <p>Code：Blocks默认的主题是白色背景的，长时间打代码不利于自己的眼睛。百度了下相关的文章，发现大部分文章方法并不详尽，对像我这样的小白兼菜鸡很不友好，故自己重新整理了一下。</p>
+<hr>
+<h2 id="Step-1：主题下载"><a href="#Step-1：主题下载" class="headerlink" title="Step 1：主题下载"></a>Step 1：主题下载</h2><ol>
+<li><p>官方Wiki提供了15种代码高亮的主题，<a href="http://wiki.codeblocks.org/index.php?title=Syntax_highlighting_custom_colour_themes" target="_blank" rel="external">点击此链接进入官网页面下载</a><br>进入网站后，你会发现满屏幕的英文同时并没有相关的下载链接</p>
+<p><img src="http://owxxx8lxs.bkt.clouddn.com/cbthemes1.png" alt="CBThemesInstalling1"></p>
+</li>
+<li><p>点击目录中的Installation，此时页面会由这个锚链节跳转至页面相应位置，</p>
+<p><img src="http://owxxx8lxs.bkt.clouddn.com/cbthemes2.png" alt="CBThemesInstalling2"></p>
+</li>
+</ol>
+<p>标题Installation下面的话大概翻译如下是（用chrome浏览器的可以直接点Google翻译）：</p>
+<blockquote>
+<p>跟着以下步骤来安装主题：<br>注意：在导入自定义配置文件之前，请始终备份您当前的配置文件！<br>确保安装过程中Code：Blocks没有在运行（划重点）。</p>
+</blockquote>
+<p>然后复制下面代码框中的代码到记事本文件中，命名一下并将后缀改成“.conf”。我这里把它命名为“themes.conf”，并放在桌面了。</p>
+<h2 id="Step-2：主题安装"><a href="#Step-2：主题安装" class="headerlink" title="Step 2：主题安装"></a>Step 2：主题安装</h2><ol>
+<li><p>进入你的Code：Blocks的安装根目录（默认在C盘），在文件搜索框直接搜索“default.conf”，选中，右键选择打开文件所在位置（一般地址中会有AppData），直接复制文件地址。</p>
+<p><img src="http://owxxx8lxs.bkt.clouddn.com/cbthemes3.png" alt="CBThemesInstalling3"></p>
+<p><img src="http://owxxx8lxs.bkt.clouddn.com/cbthemes4.png" alt="CBThemesInstalling4"></p>
+</li>
+<li><p>进入你的Code：Blocks 安装目录，双击打开cb_share_config.exe。</p>
+<p><img src="http://owxxx8lxs.bkt.clouddn.com/cbthemes5.png" alt="CBThemesInstalling5"></p>
+<p><img src="http://owxxx8lxs.bkt.clouddn.com/cbthemes6.png" alt="CBThemesInstalling6"></p>
+<p>这个时候确保你的Code：Bolcks没有在运行，然后在左边的框中选择你复制下来的文件，右边的框中在地址栏直接粘贴刚才复制的地址然后选择“default.conf”。</p>
+</li>
+<li><p>接下来，将左边的框中全选，然后依次点击：Transfer，Save。</p>
+<p>这个时候主题就安装完毕啦。等等，还没有全部结束，还要配置下主题。</p>
+</li>
+</ol>
+<h2 id="Step-3：主题配置"><a href="#Step-3：主题配置" class="headerlink" title="Step 3：主题配置"></a>Step 3：主题配置</h2><ol>
+<li><p>打开Code：Blocks，顶部菜单栏选择Settings -&gt; Editor，打开后在左侧选择Syntax Highlighting，然后在Colour theme 选择自己喜欢的主题，按OK确定。</p>
+<p><img src="http://owxxx8lxs.bkt.clouddn.com/cbthemes7.png" alt="enter description here"></p>
+</li>
+<li><p>主题选定后，如果选的是暗色主题会发现光标颜色和背景颜色相近分不清，此时可以在刚才的界面左侧选择Margins and caret ，然后在caret栏中的Colour选择自己喜欢的颜色。</p>
+<p><img src="http://owxxx8lxs.bkt.clouddn.com/cbthemes8.png" alt="enter description here"></p>
+</li>
+</ol>
+<hr>
+<p>由于目前无需登录的评论插件要么倒了要么被墙了，所以目前博客暂时不支持留言评论，有任何意见或者问题都可以加我QQ告知，记得备注是博客这来的；或者也可以E-mail我。联系方式详见博客关于页。</p>
 
-Step 1：主题下载
-官方Wiki提供了15种代码高亮的主题，点击此链接进入官网页面下载进入网站后，你会发现满屏幕的
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/Code：BolcksThemesInstalling/#more" rel="contents">
-              Baca lebih &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
         
       
     </div>
@@ -801,7 +757,7 @@ Step 1：主题下载
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Diposting di</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-01T10:41:13+08:00">
                 2017-10-01
@@ -822,7 +778,7 @@ Step 1：主题下载
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Di</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -842,17 +798,6 @@ Step 1：主题下载
           
 
           
-          
-             <span id="/rand/" class="leancloud_visitors" data-flag-title="rand()">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Pengunjung </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
           
 
           
@@ -876,15 +821,8 @@ Step 1：主题下载
       
         
           
-          1//k=x+rand()%(y-x+1)，k即为所求范围内随机生成的数，rand()%a的结果最大为a-1
+            <figure class="highlight 1c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//k=x+rand()%(y-x+1)，k即为所求范围内随机生成的数，rand()%a的结果最大为a-1</span></div></pre></td></tr></table></figure>
           
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/rand/#more" rel="contents">
-              Baca lebih &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
@@ -960,7 +898,7 @@ Step 1：主题下载
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Diposting di</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-01T10:38:46+08:00">
                 2017-10-01
@@ -981,7 +919,7 @@ Step 1：主题下载
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Di</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -1001,17 +939,6 @@ Step 1：主题下载
           
 
           
-          
-             <span id="/exit/" class="leancloud_visitors" data-flag-title="exit(0),exit(1)">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Pengunjung </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
           
 
           
@@ -1035,16 +962,9 @@ Step 1：主题下载
       
         
           
-          12345exit(1);//异常退出,比如你的代码在出现不应该出现的分枝,要求终止程序的时候就用exit(1)exit(0);//是正常退出,就是你认为代码一切正常的时候的退出
+            <figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">exit</span>(<span class="number">1</span>);</div><div class="line"><span class="regexp">//</span>异常退出,比如你的代码在出现不应该出现的分枝,要求终止程序的时候就用<span class="keyword">exit</span>(<span class="number">1</span>)</div><div class="line"></div><div class="line"><span class="keyword">exit</span>(<span class="number">0</span>);</div><div class="line"><span class="regexp">//</span>是正常退出,就是你认为代码一切正常的时候的退出</div></pre></td></tr></table></figure>
 
           
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/exit/#more" rel="contents">
-              Baca lebih &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
@@ -1120,7 +1040,7 @@ Step 1：主题下载
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Diposting di</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-28T23:47:34+08:00">
                 2017-09-28
@@ -1141,7 +1061,7 @@ Step 1：主题下载
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Di</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -1161,17 +1081,6 @@ Step 1：主题下载
           
 
           
-          
-             <span id="/type/" class="leancloud_visitors" data-flag-title="warning assignment from incompatible pointer type">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Pengunjung </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
           
 
           
@@ -1195,15 +1104,9 @@ Step 1：主题下载
       
         
           
-          12345678910111213141516171819202122/*	@warning: assignment from incompatible pointer type    （指针类型不匹配）   */	//原代码	struct Node&#123;  		datatype data; 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/type/#more" rel="contents">
-              Baca lebih &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line">	@warning: assignment from incompatible pointer <span class="keyword">type</span>    （指针类型不匹配）   </div><div class="line">*/</div><div class="line"></div><div class="line">	//原代码</div><div class="line">	struct <span class="keyword">Node</span><span class="title">&#123;</span></div><div class="line"><span class="title">  		datatype</span> data;</div><div class="line">  		struct <span class="keyword">Node</span> <span class="title">*next</span>;</div><div class="line"> 		struct <span class="keyword">Node</span> <span class="title">*pre</span>;</div><div class="line">	&#125;;</div><div class="line">	typedef struct <span class="keyword">Node</span> <span class="title">nodes</span>;</div><div class="line">	typedef struct <span class="keyword">Node</span> <span class="title">*list</span>;      //与结构体中的指针类型冲突</div><div class="line"></div><div class="line"></div><div class="line">	//修改后的代码</div><div class="line">	typedef struct <span class="keyword">Node</span> <span class="title">*list</span>; </div><div class="line">	struct <span class="keyword">Node</span><span class="title">&#123;</span></div><div class="line"><span class="title">		datatype</span> data;</div><div class="line">  		list next;</div><div class="line">  		list pre; </div><div class="line">	&#125;;</div><div class="line">	typedef struct <span class="keyword">Node</span> <span class="title">nodes</span>;</div></pre></td></tr></table></figure>
+
+          
         
       
     </div>
@@ -1279,7 +1182,7 @@ Step 1：主题下载
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Diposting di</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-28T23:31:28+08:00">
                 2017-09-28
@@ -1300,7 +1203,7 @@ Step 1：主题下载
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Di</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -1320,17 +1223,6 @@ Step 1：主题下载
           
 
           
-          
-             <span id="/代码杂货铺/" class="leancloud_visitors" data-flag-title="代码杂货铺">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Pengunjung </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
           
 
           
@@ -1354,17 +1246,10 @@ Step 1：主题下载
       
         
           
-          《代码杂货铺》分类简介想法源于自己在学习过程中不会主动并系统地去整理某些知识，所以会经常出现学过后即使运用后没几天就忘掉的情况。
-故决定开设这一分类来统一这一零碎的学习碎片，说不定自己哪天突然就整理了。
+            <h3 id="《代码杂货铺》分类简介"><a href="#《代码杂货铺》分类简介" class="headerlink" title="《代码杂货铺》分类简介"></a>《代码杂货铺》分类简介</h3><p>想法源于自己在学习过程中不会主动并系统地去整理某些知识，所以会经常出现学过后即使运用后没几天就忘掉的情况。</p>
+<p>故决定开设这一分类来统一这一零碎的学习碎片，说不定自己哪天突然就整理了。</p>
 
           
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/代码杂货铺/#more" rel="contents">
-              Baca lebih &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
@@ -1440,7 +1325,7 @@ Step 1：主题下载
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Diposting di</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-28T18:04:39+08:00">
                 2017-09-28
@@ -1461,7 +1346,7 @@ Step 1：主题下载
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Di</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -1481,17 +1366,6 @@ Step 1：主题下载
           
 
           
-          
-             <span id="/这是一篇测试文章/" class="leancloud_visitors" data-flag-title="这是一篇测试文章">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Pengunjung </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
           
 
           
@@ -1515,19 +1389,12 @@ Step 1：主题下载
       
         
           
-          代码高亮测试1printf("代码高亮测试成功了吗？");
-
-七牛云图床测试
-
+            <p>代码高亮测试<br><figure class="highlight abnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">printf(<span class="string">"代码高亮测试成功了吗？"</span>)<span class="comment">;</span></div></pre></td></tr></table></figure></p>
+<hr>
+<p>七牛云图床测试<br><img src="http://owxxx8lxs.bkt.clouddn.com/huaji.jpeg" alt="图片测试"></p>
+<hr>
 
           
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/这是一篇测试文章/#more" rel="contents">
-              Baca lebih &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
@@ -1572,7 +1439,6 @@ Step 1：主题下载
 
           
 
-
         </div>
         
           
@@ -1593,97 +1459,73 @@ Step 1：主题下载
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="金傲Asher" />
-          <p class="site-author-name" itemprop="name">金傲Asher</p>
-           
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">金傲Asher</p>
               <p class="site-description motion-element" itemprop="description">逃出体制，奔向生命的大和谐</p>
-          
-        </div>
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives/">
-                <span class="site-state-item-count">8</span>
-                <span class="site-state-item-name">posting</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">kategori</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
           </div>
-        
 
-        <div class="links-of-author motion-element">
-          
+          <nav class="site-state motion-element">
+
             
-              <span class="links-of-author-item">
-                <a href="https://github.com/jinaoasher" target="_blank" title="Github">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                    
-                      Github
-                    
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">posts</span>
                 </a>
-              </span>
+              </div>
             
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/5079085681" target="_blank" title="微博">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                    
-                      微博
-                    
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">categories</span>
                 </a>
-              </span>
+              </div>
             
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
@@ -1700,30 +1542,36 @@ Step 1：主题下载
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-lemon-o"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">金傲Asher</span>
+
+  
 </div>
 
 
-<div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
-</div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
-<div class="theme-info">
-  Tema -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
+
+
 
 
         
+
+
+
+
+
+
 
         
       </div>
@@ -1768,7 +1616,7 @@ Step 1：主题下载
 
 
   
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
   <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
@@ -1789,25 +1637,21 @@ Step 1：主题下载
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
 
 
-
-  
-  
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+  
 
   
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
 
 
 
@@ -1838,118 +1682,11 @@ Step 1：主题下载
 
 
 
-  
-
-
-
 
 
   
 
-  
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("hhvOcBzVHVJXF7Noh4u4XGCu-gzGzoHsz", "jB2ECY2QPL3tkFw5KdVd9sXx");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
 
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
 
 
 
@@ -1964,5 +1701,6 @@ Step 1：主题下载
   
 
   
+
 </body>
 </html>
