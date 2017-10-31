@@ -84,7 +84,7 @@
 
 
 
-  <meta name="keywords" content="欢迎来到Asher的博客" />
+  <meta name="keywords" content="数据结构, C, 稀疏矩阵," />
 
 
 
@@ -97,16 +97,18 @@
 
 
 
-<meta name="description" content="逃出体制，奔向生命的大和谐">
-<meta property="og:type" content="website">
-<meta property="og:title" content="金傲Asher">
-<meta property="og:url" content="http://jinaoasher.site/categories/网站测试/index.html">
+<meta name="description" content="稀疏矩阵的概念及三元组表示法如果一个矩阵中的很多元素的值为零，即零元素的个数远远大于非零元素的个数时，称该矩阵为稀疏矩阵。 由于矩阵中零元素过多，若用一般方法对稀疏矩阵进行存储会造成空间的大大浪费，因此，我们在存储稀疏矩阵的时候，只需要对非零元素进行存储* 。 根据存储时所附加信息的不同，稀疏矩阵的顺序存储方式包括：三元组表示法、带辅助行向量的二元组表示法和伪地址表示法。本文采取三元组表示法对稀疏">
+<meta name="keywords" content="数据结构, C, 稀疏矩阵">
+<meta property="og:type" content="article">
+<meta property="og:title" content="稀疏矩阵三元组表示法的倒置">
+<meta property="og:url" content="http://jinaoasher.site/稀疏矩阵三元组表示法的倒置/index.html">
 <meta property="og:site_name" content="金傲Asher">
-<meta property="og:description" content="逃出体制，奔向生命的大和谐">
+<meta property="og:description" content="稀疏矩阵的概念及三元组表示法如果一个矩阵中的很多元素的值为零，即零元素的个数远远大于非零元素的个数时，称该矩阵为稀疏矩阵。 由于矩阵中零元素过多，若用一般方法对稀疏矩阵进行存储会造成空间的大大浪费，因此，我们在存储稀疏矩阵的时候，只需要对非零元素进行存储* 。 根据存储时所附加信息的不同，稀疏矩阵的顺序存储方式包括：三元组表示法、带辅助行向量的二元组表示法和伪地址表示法。本文采取三元组表示法对稀疏">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-31T09:32:01.457Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="金傲Asher">
-<meta name="twitter:description" content="逃出体制，奔向生命的大和谐">
+<meta name="twitter:title" content="稀疏矩阵三元组表示法的倒置">
+<meta name="twitter:description" content="稀疏矩阵的概念及三元组表示法如果一个矩阵中的很多元素的值为零，即零元素的个数远远大于非零元素的个数时，称该矩阵为稀疏矩阵。 由于矩阵中零元素过多，若用一般方法对稀疏矩阵进行存储会造成空间的大大浪费，因此，我们在存储稀疏矩阵的时候，只需要对非零元素进行存储* 。 根据存储时所附加信息的不同，稀疏矩阵的顺序存储方式包括：三元组表示法、带辅助行向量的二元组表示法和伪地址表示法。本文采取三元组表示法对稀疏">
 
 
 
@@ -136,13 +138,13 @@
 
 
 
-  <link rel="canonical" href="http://jinaoasher.site/categories/网站测试/"/>
+  <link rel="canonical" href="http://jinaoasher.site/稀疏矩阵三元组表示法的倒置/"/>
 
 
 
 
 
-  <title>分类: 网站测试 | 金傲Asher</title>
+  <title>稀疏矩阵三元组表示法的倒置 | 金傲Asher</title>
   
 
 
@@ -171,7 +173,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left ">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -309,55 +311,232 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>网站测试<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://jinaoasher.site/稀疏矩阵三元组表示法的倒置/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="金傲Asher">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://owxxx8lxs.bkt.clouddn.com/avater.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="金傲Asher">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/这是一篇测试文章/" itemprop="url">
-              
-                <span itemprop="name">这是一篇测试文章</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">稀疏矩阵三元组表示法的倒置</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-28T18:04:39+08:00"
-              content="2017-09-28" >
-          09-28
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-31T17:01:48+08:00">
+                2017-10-31
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据结构/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/稀疏矩阵三元组表示法的倒置/" class="leancloud_visitors" data-flag-title="稀疏矩阵三元组表示法的倒置">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    </div>
+      
 
+      
+        <h4 id="稀疏矩阵的概念及三元组表示法"><a href="#稀疏矩阵的概念及三元组表示法" class="headerlink" title="稀疏矩阵的概念及三元组表示法"></a>稀疏矩阵的概念及三元组表示法</h4><p>如果一个矩阵中的很多元素的值为零，即零元素的个数远远大于非零元素的个数时，称该矩阵为<strong>稀疏矩阵</strong>。</p>
+<p>由于矩阵中零元素过多，若用一般方法对稀疏矩阵进行存储会造成空间的大大浪费，因此，我们在存储稀疏矩阵的时候，<strong>只需要对非零元素进行存储*</strong> 。</p>
+<p>根据存储时所附加信息的不同，稀疏矩阵的顺序存储方式包括：三元组表示法、带辅助行向量的二元组表示法和伪地址表示法。本文采取三元组表示法对稀疏矩阵进行存储。</p>
+<p>三元组表示法实际上就是一个二维数组，即将稀疏矩阵中单个非零元的信息（所在行、所在列、数值）用一个数组进行才能存储，再将所有存有单个非零元的数组再用一个数组进行存储。需要注意的是，<strong>二维数组开始的第一串信息存的是整个稀疏矩阵的信息（即矩阵的规格以及非零元个数</strong> ， 并且每个非零元素需按照行号递增、同一行的非零元素按列号递增的顺序存放。</p>
+<p>举个栗子：定义一个$7*6$ 的矩阵A。<br>$$A = \begin{bmatrix}<br>    0&amp;0&amp;-5&amp;0&amp;1&amp;0\\<br>    0&amp;0&amp;0&amp;2&amp;0&amp;0\\<br>    3&amp;0&amp;0&amp;0&amp;0&amp;0\\<br>    0&amp;0&amp;0&amp;0&amp;0&amp;0\\<br>    12&amp;0&amp;0&amp;0&amp;0&amp;0\\<br>    0&amp;0&amp;0&amp;0&amp;0&amp;4\\<br>    0&amp;0&amp;21&amp;0&amp;0&amp;0\\<br>\end{bmatrix}$$</p>
+<p>用可用二维数组B[8][3]对其进行存储，其中B[0][0~2]存放矩阵信息，B[1~7][0~2]存放非零元素的信息。相应表格如下：<br>|B|0|1|2|<br>|—|<br>|0|7|6|7|<br>|1|0|2|-5|<br>|2|0|4|1|<br>|3|1|3|2|<br>|4|2|1|3|<br>|5|4|0|12|<br>|6|5|5|4|<br>|7|6|2|21|</p>
+<h4 id="稀疏矩阵的倒置及相应三元组表示法的实现"><a href="#稀疏矩阵的倒置及相应三元组表示法的实现" class="headerlink" title="稀疏矩阵的倒置及相应三元组表示法的实现"></a>稀疏矩阵的倒置及相应三元组表示法的实现</h4>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>给您拜个早年嘞~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://owxxx8lxs.bkt.clouddn.com/wechatpay.png" alt="金傲Asher 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="http://owxxx8lxs.bkt.clouddn.com/alipay.jpg" alt="金傲Asher 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    金傲Asher
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://jinaoasher.site/稀疏矩阵三元组表示法的倒置/" title="稀疏矩阵三元组表示法的倒置">http://jinaoasher.site/稀疏矩阵三元组表示法的倒置/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数据结构-C-稀疏矩阵/" rel="tag"># 数据结构, C, 稀疏矩阵</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/多维顺序存储数组之地址求解问题/" rel="next" title="多维顺序存储数组之地址求解问题">
+                <i class="fa fa-chevron-left"></i> 多维顺序存储数组之地址求解问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -365,6 +544,12 @@
 
 
           
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMTE0OC83Njk3"></div>
+    </div>
+  
+
 
         </div>
         
@@ -385,8 +570,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -473,6 +667,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#稀疏矩阵的概念及三元组表示法"><span class="nav-number">1.</span> <span class="nav-text">稀疏矩阵的概念及三元组表示法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#稀疏矩阵的倒置及相应三元组表示法的实现"><span class="nav-number">2.</span> <span class="nav-text">稀疏矩阵的倒置及相应三元组表示法的实现</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -599,6 +809,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
@@ -627,6 +841,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
