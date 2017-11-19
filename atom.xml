@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jinaoasher.site/"/>
-  <updated>2017-11-02T11:02:11.556Z</updated>
+  <updated>2017-11-19T07:04:11.653Z</updated>
   <id>http://jinaoasher.site/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二叉树相关算法的递归实现</title>
+    <link href="http://jinaoasher.site/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95%E7%9A%84%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0/"/>
+    <id>http://jinaoasher.site/二叉树相关算法的递归实现/</id>
+    <published>2017-11-19T06:01:15.000Z</published>
+    <updated>2017-11-19T07:04:11.653Z</updated>
+    
+    <content type="html"><![CDATA[<p>上周忙于一个公共安全创新创业的比赛，我们组当时随便想的一个项目竟然进了决赛，然后就是忙忙忙着做ppt、改项目计划书，虽然最后在半决赛就被刷掉了，emmm但感觉还是多多少少有一点收获的吧。然后就是一堆的作业没写，特别是数据结构，学到二叉树了，发现自己的脑子明显不够用了，啊啊啊啊啊，就抱怨一下，然后在这篇文章将二叉树的相关递归算法重新整理一下。</p><hr><p>##二叉树的结构体定义<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typedef</span> <span class="keyword">char</span> datatype;</div><div class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span></div><div class="line">datatype data;</div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">lchild</span>, *<span class="title">rchild</span>;</span></div><div class="line">&#125;binnode;</div><div class="line"><span class="keyword">typedef</span> binnode *bintree;</div></pre></td></tr></table></figure></p><p>###二叉树的前中后序遍历</p><p>#####二叉树的前序遍历<br>二叉树的前序遍历对结点的访问顺序依次是根节点、左子女、右子女。递归的主要思想就是，假设每次递归直接访问的结点是当前树或者子树的根节点，如果当前结点不为空，则说明根节点不为空，打印根节点的内容，然后用同样的方法依次访问它的左子树和右子树。</p><p><a href="http://owxxx8lxs.bkt.clouddn.com/%E5%9B%BE%E7%89%871.png" target="_blank" rel="external">前序遍历</a></p><p>前序遍历代码实现如下：<br><figure class="highlight xl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">void preOrder(bintree t)&#123;</div><div class="line"><span class="keyword">if</span>(t) &#123;</div><div class="line"><span class="function"><span class="title">printf</span>("%c", t-&gt;</span><span class="keyword">data</span>);</div><div class="line"><span class="function"><span class="title">preOrder</span>(t-&gt;</span>lchild);</div><div class="line"><span class="function"><span class="title">preOrder</span>(t-&gt;</span>rchild);</div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p><p>#####二叉树的中序遍历<br>二叉树的中序遍历对结点的访问顺序依次是左子女、根节点、右子女。递归的主要思想就是，假设每次递归直接访问的结点是当前树或者子树的根节点，如果当前结点不为空，则用同样方法先进入它的左子树进行遍历，左子树遍历完毕后打印当前结点（即根节点）的内容，然后再用同样方法对右子树进行遍历。</p><p><a href="http://owxxx8lxs.bkt.clouddn.com/%E5%9B%BE%E7%89%872.png" target="_blank" rel="external">中序遍历</a></p><p>中序遍历代码实现如下：<br><figure class="highlight xl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">void InOrder(bintree t)&#123;</div><div class="line"><span class="keyword">if</span>(t) &#123;</div><div class="line"><span class="function"><span class="title">preOrder</span>(t-&gt;</span>lchild);</div><div class="line"><span class="function"><span class="title">printf</span>("%c", t-&gt;</span><span class="keyword">data</span>);</div><div class="line"><span class="function"><span class="title">preOrder</span>(t-&gt;</span>rchild);</div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p><p>#####二叉树的后序遍历<br>二叉树的后序遍历对结点的访问顺序依次是左子女、右子女、根节点。递归的主要思想就是，假设每次递归直接访问的结点是当前树或者子树的根节点，如果当前结点不为空，则用同样的方法先进入它的左子树进行遍历，左子树遍历完毕后进入当前结点（即进入左子树之前的根节点）的右子树进行遍历，最后再打印当前结点（即根节点）的内容。</p><p><a href="http://owxxx8lxs.bkt.clouddn.com/%E5%9B%BE%E7%89%873.png" target="_blank" rel="external">后序遍历</a></p><p>后序遍历代码实现如下：<br><figure class="highlight xl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">void postOrder(bintree t)&#123;</div><div class="line"><span class="keyword">if</span>(t) &#123;</div><div class="line"><span class="function"><span class="title">preOrder</span>(t-&gt;</span>lchild);</div><div class="line"><span class="function"><span class="title">preOrder</span>(t-&gt;</span>rchild);</div><div class="line"><span class="function"><span class="title">printf</span>("%c", t-&gt;</span><span class="keyword">data</span>);</div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p><p>#####二叉树遍历总结</p><p>先记着，待写</p><p>###二叉树结点个数</p><p>###二叉树的深度</p><p>###二叉树某一结点的深度</p><pre><code></code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;上周忙于一个公共安全创新创业的比赛，我们组当时随便想的一个项目竟然进了决赛，然后就是忙忙忙着做ppt、改项目计划书，虽然最后在半决赛就被刷掉了，emmm但感觉还是多多少少有一点收获的吧。然后就是一堆的作业没写，特别是数据结构，学到二叉树了，发现自己的脑子明显不够用了，啊啊啊
+      
+    
+    </summary>
+    
+      <category term="二叉树" scheme="http://jinaoasher.site/categories/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+    
+      <category term="C, 二叉树, 递归" scheme="http://jinaoasher.site/tags/C-%E4%BA%8C%E5%8F%89%E6%A0%91-%E9%80%92%E5%BD%92/"/>
+    
+  </entry>
   
   <entry>
     <title>稀疏矩阵三元组表示法的倒置</title>
