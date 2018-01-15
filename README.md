@@ -4,4 +4,4 @@
 
 ## Old Personal BLog
 
-My new blog is built on Typecho. Click this link to my new blog: [JinaoAsher's Blog](https://jinaosher.site)
+My new blog is built on Typecho. Click this link to my new blog: [JinaoAsher's Blog](https://jinaoasher.site)
